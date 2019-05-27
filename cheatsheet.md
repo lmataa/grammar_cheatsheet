@@ -20,7 +20,7 @@ listings-no-page-break: "true"
 
 # Build GCL for a given language
 
-# Reduce a GCL 
+# Reduce a CFG 
 
 Dada una gramática  $G = (N, T, S, P)$:
 
@@ -68,6 +68,8 @@ X es accesible si $\exists$ un camino de S hasta X.
 
 # LL(k) Grammars
 
-# GCL to APDN
+# CFG to NPDA
 
-# APDN to GCL
+# NPDA to CFG
+
+
