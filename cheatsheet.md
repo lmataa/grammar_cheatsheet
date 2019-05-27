@@ -76,6 +76,36 @@ Given a CFG ...
 
 ## Greibach
 
+$S \rightarrow \lambda$ S don't appears in the right member of the same rule.
+
+$A \rightarrow a \alpha, A \in N, a \in T, \alpha \in N^*$ 
+
+1. $G \rightarrow G \prime \mid G \prime is in CNF$
+2. $G \prime \rightarrow G \prime \prime in GNF$
+
+- 2.1 Order the non terminals (ex: S<A<B):
+    
+    $A_1 \leftrightarrow S$
+      
+    $A_2 \leftrightarrow A$
+      
+    $A_2 \leftrightarrow B$
+
+- 2.2 Every rule must be in the form of:
+
+    $A_i \rightarrow A_j \alpha, j>i$
+
+- 2.3 In the case that a rule is not in that form:
+
+    ex: $A_2 \rightarrow A_1 A_3$
+
+    Replace $A_1$ with its right members.
+
+    ex: $A_1 \rightarrow A_2 A_3 \mid A_2 A_2$
+
+    Replacing: $A_2 \rightarrow A_2 A_3 A_3 \mid A_2 A_2 A_3$ (Recursivity to the left)
+
+
 # PDA
 
 ## Deterministic PDA
