@@ -48,7 +48,16 @@ Se construye un grafo:
 
 X es accesible si $\exists$ un camino de S hasta X.
 
+<<<<<<< HEAD
 # CFG is finite
+=======
+# Algorithm for:
+
+## CFG is finite
+Given a CFG ...
+
+## CFG is finite
+>>>>>>> refs/remotes/origin/master
 
 1. Reduce the grammar.
 2. Transform into CNF.
@@ -122,3 +131,22 @@ It will always produce a PDA with **three states**
     \end{figure}
 
     
+# Misc
+
+## Eliminate common prefixes
+
+$A \rightarrow \alpha \beta_1 \mid \alpha \beta_2 \mid \cdots \mid \alpha \beta_n$
+
+$A \rightarrow \gamma_1 \mid \gamma_2 \mid \cdots \mid \gamma_m$
+
+Transform into:
+
+$A \rightarrow A \prime$
+  
+$A \prime \rightarrow \beta_1 \mid \beta_2 \mid \cdots \mid \beta_n$
+
+## Ambiguity
+
+A grammar $G=(N, T, S, P)$ is ambiguous if $\exists$ a word that:
+- w can be derived with 2 different derivations to the right or left.
+- w have 2 different derivation trees.
