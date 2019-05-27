@@ -30,16 +30,16 @@ Dada una gramática  $G = (N, T, S, P)$:
 
 - El orden importa, primero calcular co-accesibles y luego accesibles.
 
-## Algoritmo para calcular símbolos co-accesibles
+**Algoritmo para calcular símbolos co-accesibles**
 
 Símbolos co-accesibles:
 $S_{co} = \{A \in N \mid A \rightarrow \alpha, \alpha \in T^* \}$
   
 $S_{co_i+1} = S_[co_i] \{ A \in N \mid A \rightarrow \alpha \in P, \alpha \in (S_[co_i]\cup T)^* \}$
 
-**STOP WHEN**: $S_{co_i} = S_{co_i+1}$
+*STOP WHEN*: $S_{co_i} = S_{co_i+1}$
 
-## Algoritmo para calcular símbolos accesibles
+**Algoritmo para calcular símbolos accesibles**
 
 Se construye un grafo: 
 
@@ -50,7 +50,6 @@ X es accesible si $\exists$ un camino de S hasta X.
 
 # Algorithm for:
 
-## CFG is finite
 Given a CFG ...
 
 ## CFG is finite
@@ -59,22 +58,20 @@ Given a CFG ...
 2. Transform into CNF.
 3. Look for loops in the dependency graph.
 
-## CFG is empty
+# CFG is empty
 
 1. Calculate co-accesible symbols.
 2. If  $S \in S_c \rightarrow L(G) \neq \emptyset$ else $L(G) = \emptyset$
 
-## A word belongs to L(G)
+# A word belongs to L(G)
 
-### CYK
+# CYK
 
-### Brute force
+# Brute force
 
-# Normal Forms
+# Chomsky
 
-## Chomsky
-
-## Greibach
+# Greibach
 
 $S \rightarrow \lambda$ S don't appears in the right member of the same rule.
 
@@ -108,7 +105,7 @@ $A \rightarrow a \alpha, A \in N, a \in T, \alpha \in N^*$
 
 # PDA
 
-## Deterministic PDA
+**Deterministic PDA**
 
 $PDA = (Q, \Sigma, \Gamma, \delta, q_0, Z_0, F)$ is deterministic if:
 
