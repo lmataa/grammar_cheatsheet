@@ -75,6 +75,16 @@ Given a CFG ...
 
 ## Greibach
 
+# PDA
+
+## Deterministic PDA
+
+$PDA = (Q, \Sigma, \Gamma, \delta, q_0, Z_0, F)$ is deterministic if:
+
+1. $\mid \delta(q,a,A)\mid \leq 1, \forall q \in Q, a \in \Sigma, A \in \Gamma$
+
+2. $\delta(q, \lambda, A) \neq \emptyset, \delta(q,a,A)=\emptyset \forall A \in \Sigma$
+
 # LL(k) Grammars
 
 # CFG to NPDA
