@@ -50,9 +50,18 @@ X es accesible si $\exists$ un camino de S hasta X.
 
 # Algorithm for:
 
-## GCL is finite
+Given a CFG ...
+
+## CFG is finite
+
+1. Reduce the grammar.
+2. Transform into CNF.
+3. Look for loops in the dependency graph.
 
 ## GCL is empty
+
+1. Calculate co-accesible symbols.
+2. If  $S \in S_c \rightarrow L(G) \neq \emptyset$ else $L(G) = \emptyset$
 
 ## A word belongs to L(G)
 
