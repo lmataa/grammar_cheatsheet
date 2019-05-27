@@ -144,3 +144,7 @@ $A \rightarrow A \prime$
 $A \prime \rightarrow \beta_1 \mid \beta_2 \mid \cdots \mid \beta_n$
 
 ## Ambiguity
+
+A grammar $G=(N, T, S, P)$ is ambiguous if $\exists$ a word that:
+- w can be derived with 2 different derivations to the right or left.
+- w have 2 different derivation trees.
