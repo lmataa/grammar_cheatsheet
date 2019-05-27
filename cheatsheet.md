@@ -17,7 +17,13 @@ listings-no-page-break: "true"
 
 # Reduce a GCL 
 
-# Algorithm for:
+Dada una gramática  $G = (N, T, S, P)$:
+
+- Un símbolo útil $\in N \cup T$ es aquel:
+    - $X \in N \cup T$ accesible si: $S \Rightarrow^* \alpha X \beta$
+    - $X \in N$ co-accesible si: $X \Rightarrow^* \omega , \omega \in T^*$
+
+ Algorithm for:
 
 ## GCL is finite
 
