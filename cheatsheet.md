@@ -20,7 +20,7 @@ listings-no-page-break: "true"
 
 # Build GCL for a given language
 
-# Reduce a GCL 
+# Reduce a CFG 
 
 # Algorithm for:
 
@@ -42,6 +42,8 @@ listings-no-page-break: "true"
 
 # LL(k) Grammars
 
-# GCL to APDN
+# CFG to NPDA
 
-# APDN to GCL
+# NPDA to CFG
+
+
