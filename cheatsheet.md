@@ -28,7 +28,27 @@ Dada una gramática  $G = (N, T, S, P)$:
     - $X \in N \cup T$ accesible si: $S \Rightarrow^* \alpha X \beta$
     - $X \in N$ co-accesible si: $X \Rightarrow^* \omega , \omega \in T^*$
 
- Algorithm for:
+- El orden importa, primero calcular co-accesibles y luego accesibles.
+
+## Algoritmo para calcular símbolos co-accesibles
+
+Símbolos co-accesibles:
+$S_{co} = \{A \in N \mid A \rightarrow \alpha, \alpha \in T^* \}$
+  
+$S_{co_i+1} = S_[co_i] \{ A \in N \mid A \rightarrow \alpha \in P, \alpha \in (S_[co_i]\cup T)^* \}$
+
+**STOP WHEN**: $S_{co_i} = S_{co_i+1}$
+
+## Algoritmo para calcular símbolos accesibles
+
+Se construye un grafo: 
+
+- Los nodos son símbolos(dependencias)
+- $X\rightarrow Y$  si  $X\rightarrow \alpha Y \beta \in P$
+
+X es accesible si $\exists$ un camino de S hasta X.
+
+# Algorithm for:
 
 ## GCL is finite
 
