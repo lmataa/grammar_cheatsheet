@@ -50,9 +50,7 @@ X es accesible si $\exists$ un camino de S hasta X.
 
 # Algorithm for:
 
-<<<<<<< HEAD
 ## CFG is finite
-=======
 Given a CFG ...
 
 ## CFG is finite
@@ -60,7 +58,6 @@ Given a CFG ...
 1. Reduce the grammar.
 2. Transform into CNF.
 3. Look for loops in the dependency graph.
->>>>>>> refs/remotes/origin/master
 
 ## CFG is empty
 
@@ -132,3 +129,18 @@ It will always produce a PDA with **three states**
     \end{figure}
 
     
+# Misc
+
+## Eliminate common prefixes
+
+$A \rightarrow \alpha \beta_1 \mid \alpha \beta_2 \mid \cdots \mid \alpha \beta_n$
+
+$A \rightarrow \gamma_1 \mid \gamma_2 \mid \cdots \mid \gamma_m$
+
+Transform into:
+
+$A \rightarrow A \prime$
+  
+$A \prime \rightarrow \beta_1 \mid \beta_2 \mid \cdots \mid \beta_n$
+
+## Ambiguity
