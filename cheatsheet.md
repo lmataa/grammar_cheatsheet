@@ -2,6 +2,11 @@
 title: "Grammar Cheatsheet"
 author: [ ]
 date: "2019"
+header-includes: |
+    \usepackage{physics}
+    \usepackage{amsmath}
+    \usepackage{mathtools}
+    \mathtoolsset{showonlyrefs}
 subtitle: "TLP"
 titlepage: "true"
 toc: "true"
