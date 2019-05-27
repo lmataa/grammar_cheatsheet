@@ -48,16 +48,7 @@ Se construye un grafo:
 
 X es accesible si $\exists$ un camino de S hasta X.
 
-<<<<<<< HEAD
 # CFG is finite
-=======
-# Algorithm for:
-
-## CFG is finite
-Given a CFG ...
-
-## CFG is finite
->>>>>>> refs/remotes/origin/master
 
 1. Reduce the grammar.
 2. Transform into CNF.
@@ -75,6 +66,33 @@ Given a CFG ...
 # Brute force
 
 # Chomsky
+
+La CNF es una gramatica del tipo:
+
+1. $A \rightarrow BC$, donde $A,B,$ y $C$, son no-terminales o
+2. $A \rightarrow a$ donde $A$ es un no-terminal y $a$ es una terminal
+3. Cabe notar que un CNF no tiene simbolos inutiles (se debe reducir antes) ni tampoco tiene producciones $\epsilon$
+
+Los pasos para transformar una CFG a una CNF son:
+
+a. Conseguir que todos los cuerpos de tamano 2 o mas consistan solo de no-terminales.
+b. Romper los cuerpos de tamano 3 o superior en cuerpos pequenos para cumplir la condicion anterior.
+
+ejemplo:
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{./captures/CFG_CNF_1.png}
+    \label{fig:label}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{./captures/CFG_CNF_2.png}
+    \label{fig:label}
+\end{figure}
+
+\newpage
 
 # Greibach
 
@@ -131,22 +149,3 @@ It will always produce a PDA with **three states**
     \end{figure}
 
     
-# Misc
-
-## Eliminate common prefixes
-
-$A \rightarrow \alpha \beta_1 \mid \alpha \beta_2 \mid \cdots \mid \alpha \beta_n$
-
-$A \rightarrow \gamma_1 \mid \gamma_2 \mid \cdots \mid \gamma_m$
-
-Transform into:
-
-$A \rightarrow A \prime$
-  
-$A \prime \rightarrow \beta_1 \mid \beta_2 \mid \cdots \mid \beta_n$
-
-## Ambiguity
-
-A grammar $G=(N, T, S, P)$ is ambiguous if $\exists$ a word that:
-- w can be derived with 2 different derivations to the right or left.
-- w have 2 different derivation trees.
